@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    color: black;
+    font-family: "Itim" , cursive;
+}
+
+h1{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.container{
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: aqua;
+}
+
+#board{
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.cell{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 120px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    cursor: pointer;
+}
+
+.cell:nth-child(3n){
+    border-right: none;
+}
+
+.cell:nth-child(6) ~ .cell{
+    border-bottom: none;
+}
+
+button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: black;
+    color: aqua;
+    font-size: 18px;
+    cursor: pointer;
+}
+h3{
+    font-size: 50px;
+}
